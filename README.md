@@ -8,12 +8,12 @@ username : admin
 password : admin
 
 Files:
-Front-page.php for home
-archive.php for blogs
-single.php for blog details 
-index.php as generic fallback
-single-project.php for the project details
-archive-project.php for projects
+Front-page.php for home,
+archive.php for blogs,
+single.php for blog details ,
+index.php as generic fallback,
+single-project.php for the project details,
+archive-project.php for projects,
 
 rest api tab in header will take you to custom end point providing data in js format as required
 
