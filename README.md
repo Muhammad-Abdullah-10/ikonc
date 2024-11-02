@@ -20,7 +20,8 @@ rest api tab in header will take you to custom end point providing data in js fo
 I have left space on right hand side for the sidebar as seen on single project and single blog page
 
 Functions.php consist: 
-Custom Post type ,
 Basic Theme setup ,
 wp_enqueue_script ,
 Custom Rest Api
+
+You can find CPT function in plugins folder in mu-plugins
