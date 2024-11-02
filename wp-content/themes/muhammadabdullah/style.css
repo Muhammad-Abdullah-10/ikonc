@@ -1,0 +1,412 @@
+/*
+ Theme Name: Custom Theme
+ Theme URI: https://github.com/Muhammad-Abdullah-10
+ Author: Muhammad Abdullah
+ Author URI: https://github.com/Muhammad-Abdullah-10
+ 
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+header {
+    /* background-color: #333; */
+    /* color: #fff; */
+    /* padding: 1rem; */
+    height: auto;
+    padding: 0;
+
+    max-width: 100vw;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+footer {
+    /* background-color: #333; */
+    color: #fff;
+    text-align: center;
+    /* padding: 1rem; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    
+}
+
+
+.archive-project-container{
+    margin-top: 20px;
+}
+.project-card{
+    width: auto;
+    max-width: 400px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.post-image-card{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.post-image-card{
+    height: 280px;
+    object-fit: cover;
+}
+.post-image-card{
+    max-width: 100%;
+}
+.project-card h2 a{
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+.archive-project-container .row .col-sm-12 .project-card header {
+    padding: 10px 20px;
+}
+.project-card .entry-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.project-card .entry-content .row{
+    justify-content: space-between;
+}
+.project-card .entry-content h3{
+    font-size: 16px;   
+
+}
+.project-card .entry-content h3 p {
+    color: rgb(151, 109, 3);
+}
+.project-card header{
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.site-name a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.blog-wrapper article{
+    margin: 50px auto; 
+}
+
+
+.single-project-wrapper{
+    max-width: 75%;
+    margin: auto;
+}
+.blog-wrapper header{
+    padding: 10px 20px;
+}
+.single-arch-acfs{
+    max-width: 750px;
+}
+.single-arch-acfs h6{
+    font-size: 16px;
+    text-align: center
+}
+
+.posted-on , .byline{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.single-arch-acfs h6 a{
+    text-decoration: none;
+    /* color: #333; */
+}
+.single-arch-acfs h6 span ,.single-arch-acfs h6 a{
+    color: rgb(151, 109, 3);
+}
+.single-pro-wrap .entry-meta{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 750px;
+
+}
+.single-pro-wrap .entry-meta span{
+    font-size: 16px;
+}
+
+.bannerimg-prop-single{
+    max-width: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.single-project-wrapper .entry-title{
+    font-size: 40px;
+    margin: 20px 0;
+    color: rgb(151, 109, 3);
+    text-transform: uppercase;
+}
+div#navbarNav ul{
+    width: auto !important;
+    display: flex;
+    flex-direction: row;
+    min-width: 600px !important;
+    justify-content: space-evenly;
+}
+div#navbarNav ul li{
+    list-style: none;
+    width: 100px;
+    position: relative;
+}
+div#navbarNav ul li .sub-menu{
+    position: absolute;
+    max-width: 100px;
+}
+div#navbarNav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.post-navigation .nav-links {
+    display: flex;
+    width: auto;
+    max-width: 650px !important;
+    justify-content: space-between;
+}
+.post-navigation .nav-links .nav-previous a,
+.post-navigation .nav-links .nav-next a{
+    text-decoration: none !important;
+    font-size: 16px;
+    color: #333 !important;
+    font-weight: 600;
+}
+
+/* Bootstrap submenu styling */
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    display: none;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #007bff;
+}
+
+/* blog */
+.wrapper-single-blog{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper-single-blog .banner-wrapper-img {
+    max-width: 80vw;
+    object-fit: cover;
+    max-height: 600px;
+    border-radius: 10px;
+}
+.wrapper-single-blog .content-blog,.wrapper-single-blog .content-blog  {
+    max-width: 65vw !important;
+}
+.wrapper-single-blog h1{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px ;
+    color: rgb(151, 109, 3);
+}
+.single-arch-acfs.row {
+    justify-content: space-evenly;
+}
+.single-arch-acfs.row div {
+    background: #f3f3f3;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* blog */
+/* homepage */
+.wrapper-main-banner{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background: url('http://localhost/ikonic/wp-content/uploads/2024/10/Interior-and-Exterior-Doors.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    background-position: center;
+}
+.wrapper-main-banner *{
+    z-index: 100;
+}
+.wrapper-main-banner .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 1;
+}
+
+.wrapper-main-banner h2{
+    max-width:80vw;
+    margin: 20px auto;
+    color: #f3f3f3;
+    font-size: 52px;
+    text-align: center;
+}
+.wrapper-main-banner p{
+    max-width:60vw;
+    margin: 15px auto;
+    color: #f3f3f3;
+    font-size: 22px;
+    text-align: center;
+}
+.wrapper-main-banner .button-banner{
+    max-width: 300px;
+    background: rgb(151, 109, 3);
+    color: #fff;
+    border: 2px solid rgb(151, 109, 3);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 25px;
+    margin: 20px auto;
+}
+.wrapper-main-banner .button-banner:hover{
+    background: #fff;
+    color: rgb(151, 109, 3);
+    border: 2px solid rgb(151, 109, 3);
+}
+.wrapper-heading h2{
+    color : rgb(151, 109, 3);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.wrapper-home .blog-wrapper article {
+    margin: 20px auto;
+}
+.form-home{
+    width: 200px;
+    margin: auto;
+}
+.form-select:focus,
+.form-select:focus-within{
+    border: 0px !important;
+    outline: none !important;
+    border-color: rgb(151, 109, 3) !important;
+    box-shadow: 0 0 0 1px rgb(151, 109, 0.25) !important;
+}
+.form-home-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.form-home-wrapper select{
+    border: 1px solid rgb(151, 109, 3);
+}
+.form-home-wrapper option,
+.form-home-wrapper select{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(151, 109, 3);
+}
+
+/* homepage */
+@media (min-width:992px) {
+    .entry-content.single-pro-wrap {
+        max-width: 70vw;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    
+    
+    .bannerimg-prop-single{
+        width: 80%;
+        max-height: 550px;
+        /* max-width: 80%; */
+    }
+    .single-pro-wrap-content{
+        max-width: 800px;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+@media (max-width:767px) {
+    div#navbarNav ul{
+        flex-direction: column;
+        min-width: 200px !important;
+        max-width: 100%;
+        /* align-items: center; */
+    }
+    div#navbarNav ul li{
+        margin: 10px auto;
+        width: 80%;
+    }
+    div#navbarNav ul li a{
+        font-weight: 500;
+    }
+    div#navbarNav ul li .sub-menu{
+        position: relative;
+        padding-left: 5px;
+        margin: 10px 0;
+    }
+    .project-card{
+        width: auto;
+        max-width: 350px;
+    }
+    .archive-project-container .row .col-sm-12 .project-card{
+        margin: auto;
+    }
+    .blog-wrapper article{
+        margin: 30px auto;
+    }
+    .single-arch-acfs{
+        flex-direction: column;
+    }
+    .single-arch-acfs h6{
+        margin: 5px auto;
+    }
+    .bannerimg-prop-single{
+        width: auto;
+        max-width: 100%;
+    }
+    .single-project-wrapper{
+        max-width: 90%;
+        margin: auto;
+    }
+    .wrapper-main-banner p,.wrapper-main-banner h2{
+        max-width: 90vw;
+    }
+    .wrapper-main-banner h2{
+        font-size: 32px;
+    }
+    .wrapper-main-banner p{
+        font-size: 18px;
+    }
+}
+
