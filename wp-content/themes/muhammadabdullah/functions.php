@@ -2,9 +2,21 @@
 // Enqueue styles and scripts
 function custom_theme_enqueue_styles() {
     wp_enqueue_style('main-style', get_stylesheet_uri());
-    // wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'custom_theme_enqueue_styles');
+
+// Bootstrap CDN
+function enqueue_bootstrap() {
+    // Enqueue Bootstrap CSS
+    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+    // Enqueue Bootstrap Bundle with Popper for JavaScript
+    wp_enqueue_script('jquery-fun', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), null, true);
+    wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js', array(), null, true);
+    wp_enqueue_script('bs5', 'https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js', array(), null, true);
+
+}
+
 
 // Theme support for title tag, post thumbnails, and custom logo
 function custom_theme_setup() {
@@ -22,19 +34,16 @@ function custom_theme_menus() {
 }
 add_action('init', 'custom_theme_menus');
 
-// Bootstrap CDN
-function enqueue_bootstrap() {
-    // Enqueue Bootstrap CSS
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
-
-    // Enqueue Bootstrap Bundle with Popper for JavaScript
-    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', array(), null, true);
-}
 
 add_action('wp_enqueue_scripts', 'enqueue_bootstrap');
 
-// Ensure the WordPress admin bar is always shown
-add_filter('show_admin_bar', '__return_true');
+// Ensure the WordPress admin bar is shown when user is login
+add_action('after_setup_theme', function() {
+    if (!is_user_logged_in()) {
+        show_admin_bar(false); 
+    }
+});
+
 
 // Function to set custom excerpt length
 function custom_excerpt_length($length) {
